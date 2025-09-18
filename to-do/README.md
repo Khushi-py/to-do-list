@@ -21,11 +21,13 @@ Quick steps to deploy this Vite app to Vercel:
 	- Framework Preset: `Other` (or `Vite` if available)
 	- Build Command: `npm run build`
 	- Output Directory: `dist`
+	- Install Command: `npm install`
+    
 3. Alternatively, you can deploy with the Vercel CLI from the repository root:
 
 ```powershell
 # from the repository root
-cd to-do; vercel --prod
+cd to-do; npm install; vercel --prod
 ```
 
 This repo includes a `vercel.json` in the `to-do` folder which tells Vercel to run `npm run build` and serve the `dist` directory. If you change the build output, update `vercel.json` accordingly.
