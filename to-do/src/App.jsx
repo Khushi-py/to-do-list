@@ -39,10 +39,13 @@ function App() {
     <div className="App">
       <div className="todo-wrapper">
         <h1>To-Do List</h1>
-        <form onSubmit={saveToDoList}>
+
+        <h3>"Easily add, edit, and complete tasks to stay productive every day."</h3>
+        <form onSubmit={saveToDoList} autoComplete='off'>
           <input type="text" name="item" placeholder="Enter a task..." />
           <button type="submit">Add</button>
         </form>
+        
         <div className="showList">
           <ul>{list}</ul>
         </div>
